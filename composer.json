@@ -1,6 +1,6 @@
 {
   "name": "devhamidshahbazi/number-normalizer",
-  "description": "A Laravel package to normalize non-English digits to English in HTTP requests",
+  "description": "Laravel package to automatically normalize any non-English digits (Persian, Arabic, Urdu, etc.) to English numbers in all requests",
   "type": "laravel-package",
   "license": "MIT",
   "authors": [
