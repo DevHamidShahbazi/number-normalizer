@@ -1,6 +1,6 @@
 # Number Normalizer
 
-A Laravel package that automatically converts non-English digits to English in all HTTP requests.
+Laravel package to automatically normalize any non-English digits (Persian, Arabic, Urdu, etc.) to English numbers in all requests.
 
 ## Installation
 
