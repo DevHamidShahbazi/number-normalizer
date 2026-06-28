@@ -8,7 +8,7 @@
 
 ## ✨ Features
 
-- 🌍 **14 Languages Supported** - Persian, Arabic, Urdu, Hindi, Bengali, Gujarati, Thai, Khmer, Lao, Myanmar, Chinese, Japanese, Korean, Spanish
+- 🌍 **10 Languages Supported** - Persian, Arabic, Urdu, Hindi, Bengali, Gujarati, Thai, Khmer, Lao, Myanmar
 - 🚀 **Auto Middleware** - Automatically normalizes all incoming requests
 - ⚙️ **Fully Configurable** - Add custom languages, exclude routes, choose language combinations
 - 🔌 **Extensible** - Easy to add new languages via config or code
@@ -62,7 +62,7 @@ File: `config/number-normalizer.php`
     'myanmar',
 ],
 
-// Built-in mappings (complete for all 14 languages)
+// Built-in mappings (complete for all 10 languages)
 'mappings' => [
     'persian' => ['۰' => '0', '۱' => '1', '۲' => '2', /* ... */],
     'arabic'  => ['٠' => '0', '١' => '1', '٢' => '2', /* ... */],
