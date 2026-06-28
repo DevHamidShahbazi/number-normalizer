@@ -43,15 +43,6 @@ php artisan vendor:publish --tag=number-normalizer-config
 | 9 | **Lao** | `໐໑໒໓໔໕໖໗໘໙` | `໑໒໓` → `123` |
 | 10 | **Myanmar** | `၀၁၂၃၄၅၆၇၈၉` | `၁၂၃` → `123` |
 
-### Languages Using Standard English Digits (4 Languages)
-
-| # | Language | Digits | Note |
-|---|----------|--------|------|
-| 11 | **Chinese** | `0-9` | Uses standard English digits |
-| 12 | **Japanese** | `0-9` | Uses standard English digits |
-| 13 | **Korean** | `0-9` | Uses standard English digits |
-| 14 | **Spanish** | `0-9` | Uses standard English digits |
-
 ## ⚙️ Configuration
 
 File: `config/number-normalizer.php`
@@ -69,10 +60,6 @@ File: `config/number-normalizer.php`
     'khmer',
     'lao',
     'myanmar',
-    'chinese',
-    'japanese',
-    'korean',
-    'spanish',
 ],
 
 // Built-in mappings (complete for all 14 languages)
@@ -87,10 +74,6 @@ File: `config/number-normalizer.php`
     'khmer'   => ['០' => '0', '១' => '1', '២' => '2', /* ... */],
     'lao'     => ['໐' => '0', '໑' => '1', '໒' => '2', /* ... */],
     'myanmar' => ['၀' => '0', '၁' => '1', '၂' => '2', /* ... */],
-    'chinese' => ['０' => '0', '１' => '1', '２' => '2', /* ... */],
-    'japanese'=> ['０' => '0', '１' => '1', '۲' => '2', /* ... */],
-    'korean'  => ['０' => '0', '۱' => '1', '۲' => '2', /* ... */],
-    'spanish' => ['０' => '0', '۱' => '1', '۲' => '2', /* ... */],
 ],
 
 // Custom languages (add your own)
@@ -183,7 +166,6 @@ NumberNormalizer::withMapping('۱۲۳', ['۱' => '1', '۲' => '2', '۳' => '3'])
 | **Middle East** | Persian, Arabic, Urdu |
 | **South Asia** | Hindi, Bengali, Gujarati |
 | **Southeast Asia** | Thai, Khmer, Lao, Myanmar |
-| **East Asia** | Chinese, Japanese, Korean |
 | **Europe** | Spanish |
 
 ## 📝 License
